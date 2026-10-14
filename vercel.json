@@ -1,14 +1,18 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "functions": {
-    "api/**/*.py": {
-      "includeFiles": "{templates/**,Venu Gopal Potnuru.pdf}"
-    }
-  },
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/(.*)",
-      "destination": "/api/index.py?__orig_path=/$1"
+      "src": "app.py",
+      "use": "@vercel/python",
+      "config": {
+        "includeFiles": ["templates/**", "Venu Gopal Potnuru.pdf"]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app.py"
     }
   ]
 }
