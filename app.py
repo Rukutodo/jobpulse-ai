@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Optional, Dict, Any, List
 import os
 import shutil
-from fastapi import FastAPI, Query, HTTPException, Body, UploadFile, File
+from fastapi import FastAPI, Query, HTTPException, Body, UploadFile, File, Request
 from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -70,12 +70,23 @@ def startup_event():
     # Warm up resume parser
     parse_resume()
 
+@app.get("/api/index.py", response_class=HTMLResponse)
 @app.get("/", response_class=HTMLResponse)
 async def serve_index():
     index_file = TEMPLATE_DIR / "index.html"
     if not index_file.exists():
         raise HTTPException(status_code=404, detail="Web UI template not found")
     return HTMLResponse(content=index_file.read_text(encoding="utf-8"))
+
+@app.get("/api/debug")
+async def debug_endpoint(request: Request):
+    """Debug endpoint to inspect headers and paths received on Vercel."""
+    return {
+        "url": str(request.url),
+        "path": request.url.path,
+        "scope_path": request.scope.get("path"),
+        "headers": dict(request.headers)
+    }
 
 @app.get("/preview", response_class=HTMLResponse)
 async def serve_preview():
