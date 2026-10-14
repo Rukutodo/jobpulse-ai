@@ -1,7 +1,7 @@
 """
-Curated directory of 75+ Top Product MNCs, HFT Firms, Fast-Growing Unicorns, 
-Enterprise/SAP Hubs, Global GCCs, and Top IT Services paying 10 LPA+ with 100% free, 
-direct un-paywalled career boards (Greenhouse, Lever, Ashby, Workday, Direct ATS).
+Curated directory of 130+ Top Product MNCs, HFT Desks, Fast-Growing Unicorns, 
+Enterprise/SAP Hubs, Global GCCs, European Tech Giants, and Top IT Services paying 10 LPA+
+with 100% free, direct un-paywalled career boards (Greenhouse, Lever, Ashby, Workday, Direct ATS).
 """
 from typing import List, Dict, Any
 import urllib.parse
@@ -2496,6 +2496,2208 @@ COMPANY_DIRECTORY: List[Dict[str, Any]] = [
             "Search Systems Engineer"
         ],
         "google_jobs_url": "https://www.google.com/search?q=Perplexity%20AI%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "mphasis",
+        "name": "Mphasis",
+        "category": "service",
+        "category_label": "IT Services & Consulting",
+        "pay_range": "9 - 16+ LPA (NextLabs / Cloud Specialist)",
+        "tagline": "Applied tech services giant specializing in cloud, cognitive computing, and banking platforms.",
+        "locations": [
+            "Bengaluru",
+            "Pune",
+            "Chennai",
+            "Hyderabad",
+            "Mumbai"
+        ],
+        "ats": "Direct",
+        "careers_url": "https://careers.mphasis.com/",
+        "tech_stack": [
+            "Cloud",
+            "Java",
+            "Python",
+            "DevOps",
+            "Microservices",
+            "Fintech APIs"
+        ],
+        "priority_roles": [
+            "Senior Software Engineer",
+            "Cloud Solutions Architect",
+            "Full Stack Developer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Mphasis%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "zensar",
+        "name": "Zensar Technologies",
+        "category": "service",
+        "category_label": "IT Services & Consulting",
+        "pay_range": "8.5 - 15+ LPA (Digital Engineering / Lead)",
+        "tagline": "RPG Group digital solutions firm building next-generation enterprise software.",
+        "locations": [
+            "Pune",
+            "Bengaluru",
+            "Hyderabad",
+            "Kolkata"
+        ],
+        "ats": "Direct",
+        "careers_url": "https://www.zensar.com/careers",
+        "tech_stack": [
+            "Cloud",
+            "Java",
+            "React",
+            "Python",
+            "Data Engineering"
+        ],
+        "priority_roles": [
+            "Specialist Engineer",
+            "Full Stack Developer",
+            "Tech Lead"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Zensar%20Technologies%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "birlasoft",
+        "name": "Birlasoft",
+        "category": "service",
+        "category_label": "IT Services & Consulting",
+        "pay_range": "8.5 - 15+ LPA (Enterprise Digital Transformation)",
+        "tagline": "CK Birla Group enterprise transformation partner across cloud and manufacturing tech.",
+        "locations": [
+            "Pune",
+            "Noida",
+            "Bengaluru",
+            "Chennai"
+        ],
+        "ats": "Direct",
+        "careers_url": "https://www.birlasoft.com/careers",
+        "tech_stack": [
+            "Enterprise Cloud",
+            "Java",
+            "SAP",
+            "React",
+            "Python"
+        ],
+        "priority_roles": [
+            "Senior Consultant",
+            "Software Engineer",
+            "Technical Specialist"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Birlasoft%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "happiest_minds",
+        "name": "Happiest Minds Technologies",
+        "category": "service",
+        "category_label": "IT Services & Consulting",
+        "pay_range": "9 - 17+ LPA (Digital Business Services / AI)",
+        "tagline": "Mindful IT company enabling digital transformation through disruptive technologies like AI and blockchain.",
+        "locations": [
+            "Bengaluru",
+            "Pune",
+            "Noida"
+        ],
+        "ats": "Direct",
+        "careers_url": "https://www.happiestminds.com/careers/",
+        "tech_stack": [
+            "AI/ML",
+            "IoT",
+            "Cloud Native",
+            "React",
+            "Java",
+            "Python"
+        ],
+        "priority_roles": [
+            "Digital Solutions Architect",
+            "Senior Developer",
+            "Cloud Specialist"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Happiest%20Minds%20Technologies%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "cyient",
+        "name": "Cyient",
+        "category": "service",
+        "category_label": "IT Services & Consulting",
+        "pay_range": "8.5 - 15+ LPA (Intelligent Engineering Services)",
+        "tagline": "Global engineering, manufacturing, and digital technology solutions provider.",
+        "locations": [
+            "Hyderabad",
+            "Bengaluru",
+            "Pune",
+            "Noida"
+        ],
+        "ats": "Direct",
+        "careers_url": "https://www.cyient.com/careers",
+        "tech_stack": [
+            "Embedded Systems",
+            "Cloud",
+            "Python",
+            "Java",
+            "IoT",
+            "C++"
+        ],
+        "priority_roles": [
+            "Senior Software Developer",
+            "Embedded Software Engineer",
+            "DevOps Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Cyient%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "sonata",
+        "name": "Sonata Software",
+        "category": "service",
+        "category_label": "IT Services & Consulting",
+        "pay_range": "9 - 16+ LPA (Modernization Engineering / Lead)",
+        "tagline": "Global modernization and digital engineering company with proprietary Platformation model.",
+        "locations": [
+            "Bengaluru",
+            "Hyderabad"
+        ],
+        "ats": "Direct",
+        "careers_url": "https://www.sonata-software.com/careers",
+        "tech_stack": [
+            "Cloud",
+            "Microservices",
+            "Java",
+            "React",
+            "Azure",
+            "Python"
+        ],
+        "priority_roles": [
+            "Technical Lead",
+            "Senior Engineer",
+            "Full Stack Developer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Sonata%20Software%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "netflix",
+        "name": "Netflix",
+        "category": "mnc",
+        "category_label": "Tier-1 Product MNC",
+        "pay_range": "45 - 85+ LPA (Senior Software Engineer)",
+        "tagline": "Global entertainment streaming platform known for top-of-market compensation and freedom & responsibility culture.",
+        "locations": [
+            "Mumbai",
+            "Remote",
+            "Los Gatos",
+            "California"
+        ],
+        "ats": "Direct",
+        "careers_url": "https://jobs.netflix.com/",
+        "tech_stack": [
+            "Distributed Systems",
+            "Java",
+            "Node.js",
+            "Python",
+            "AWS",
+            "Kafka",
+            "React"
+        ],
+        "priority_roles": [
+            "Senior Software Engineer",
+            "Distributed Systems Engineer",
+            "UI Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Netflix%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "tesla",
+        "name": "Tesla",
+        "category": "mnc",
+        "category_label": "Tier-1 Product MNC",
+        "pay_range": "30 - 65+ LPA (Autopilot & Platform Engineer)",
+        "tagline": "Accelerating the world's transition to sustainable energy through cutting-edge EV hardware and AI autopilot software.",
+        "locations": [
+            "Pune",
+            "Bengaluru",
+            "Remote",
+            "Austin"
+        ],
+        "ats": "Direct",
+        "careers_url": "https://www.tesla.com/careers",
+        "tech_stack": [
+            "C++",
+            "Python",
+            "Embedded Systems",
+            "React",
+            "Kubernetes",
+            "PyTorch"
+        ],
+        "priority_roles": [
+            "Software Engineer",
+            "Autopilot Software Engineer",
+            "Full Stack Developer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Tesla%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "stripe",
+        "name": "Stripe",
+        "category": "mnc",
+        "category_label": "Tier-1 Product MNC",
+        "pay_range": "40 - 75+ LPA (Infrastructure & Payments)",
+        "tagline": "Financial infrastructure platform for the internet, powering millions of businesses worldwide.",
+        "locations": [
+            "Bengaluru",
+            "Remote",
+            "San Francisco",
+            "Dublin"
+        ],
+        "ats": "Direct",
+        "careers_url": "https://stripe.com/jobs",
+        "tech_stack": [
+            "Ruby",
+            "Go",
+            "Java",
+            "Distributed Systems",
+            "React",
+            "AWS"
+        ],
+        "priority_roles": [
+            "Software Engineer - Infrastructure",
+            "Backend Engineer",
+            "Full Stack Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Stripe%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "palantir",
+        "name": "Palantir Technologies",
+        "category": "mnc",
+        "category_label": "Tier-1 Product MNC",
+        "pay_range": "35 - 70+ LPA (Foundry / Gotham Platforms)",
+        "tagline": "Builds foundational data integration software platforms powering mission-critical government and enterprise decisions.",
+        "locations": [
+            "Remote",
+            "London",
+            "New York",
+            "Denver"
+        ],
+        "ats": "Lever",
+        "careers_url": "https://www.palantir.com/careers/",
+        "tech_stack": [
+            "Distributed Systems",
+            "Java",
+            "TypeScript",
+            "React",
+            "Python",
+            "Kubernetes"
+        ],
+        "priority_roles": [
+            "Forward Deployed Software Engineer",
+            "Software Engineer",
+            "Infrastructure Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Palantir%20Technologies%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "datadog",
+        "name": "Datadog",
+        "category": "mnc",
+        "category_label": "Tier-1 Product MNC",
+        "pay_range": "35 - 65+ LPA (Cloud Observability & Scale)",
+        "tagline": "Cloud monitoring and security platform delivering observability across infrastructure and applications.",
+        "locations": [
+            "Remote",
+            "Paris",
+            "New York",
+            "Boston"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://www.datadoghq.com/careers/",
+        "tech_stack": [
+            "Go",
+            "Python",
+            "Kafka",
+            "Kubernetes",
+            "PostgreSQL",
+            "React",
+            "TypeScript"
+        ],
+        "priority_roles": [
+            "Software Engineer - Systems",
+            "Backend Engineer",
+            "Platform Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Datadog%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "airbnb",
+        "name": "Airbnb",
+        "category": "mnc",
+        "category_label": "Tier-1 Product MNC",
+        "pay_range": "38 - 72+ LPA (Core Guest & Host Platform)",
+        "tagline": "Global community marketplace for travel accommodations and experiences with top-tier product culture.",
+        "locations": [
+            "Gurugram",
+            "Remote",
+            "San Francisco"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://careers.airbnb.com/",
+        "tech_stack": [
+            "Java",
+            "Kotlin",
+            "React",
+            "TypeScript",
+            "GraphQL",
+            "AWS"
+        ],
+        "priority_roles": [
+            "Software Engineer",
+            "Senior Full Stack Engineer",
+            "Backend Developer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Airbnb%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "github",
+        "name": "GitHub",
+        "category": "mnc",
+        "category_label": "Tier-1 Product MNC",
+        "pay_range": "32 - 62+ LPA (Developer Platform & Copilot)",
+        "tagline": "The world's leading developer and AI platform empowering 100+ million developers.",
+        "locations": [
+            "Bengaluru",
+            "Remote"
+        ],
+        "ats": "Direct",
+        "careers_url": "https://github.com/about/careers",
+        "tech_stack": [
+            "Ruby on Rails",
+            "Go",
+            "TypeScript",
+            "React",
+            "Azure",
+            "Kubernetes",
+            "AI Copilot"
+        ],
+        "priority_roles": [
+            "Software Engineer",
+            "Site Reliability Engineer",
+            "Full Stack Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=GitHub%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "gitlab",
+        "name": "GitLab",
+        "category": "mnc",
+        "category_label": "Tier-1 Product MNC",
+        "pay_range": "30 - 60+ LPA (All-Remote DevSecOps)",
+        "tagline": "Comprehensive all-remote DevSecOps platform delivered as a single application.",
+        "locations": [
+            "Remote Worldwide",
+            "India Remote"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://about.gitlab.com/jobs/",
+        "tech_stack": [
+            "Ruby on Rails",
+            "Go",
+            "Vue.js",
+            "PostgreSQL",
+            "Kubernetes",
+            "GCP"
+        ],
+        "priority_roles": [
+            "Backend Engineer",
+            "Frontend Engineer",
+            "Full Stack Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=GitLab%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "elastic",
+        "name": "Elastic",
+        "category": "mnc",
+        "category_label": "Tier-1 Product MNC",
+        "pay_range": "30 - 58+ LPA (Search & Observability)",
+        "tagline": "Search-powered AI solutions platform behind Elasticsearch, Kibana, and Logstash.",
+        "locations": [
+            "Bengaluru",
+            "Remote"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://www.elastic.co/about/careers",
+        "tech_stack": [
+            "Java",
+            "Go",
+            "Python",
+            "Distributed Search",
+            "React",
+            "TypeScript"
+        ],
+        "priority_roles": [
+            "Software Engineer - Elasticsearch",
+            "Full Stack Engineer",
+            "Cloud Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Elastic%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "shopify",
+        "name": "Shopify",
+        "category": "mnc",
+        "category_label": "Tier-1 Product MNC",
+        "pay_range": "35 - 65+ LPA (Global Commerce Engine)",
+        "tagline": "Leading global commerce company providing trusted tools to start, grow, and market retail businesses.",
+        "locations": [
+            "Remote Worldwide",
+            "Ottawa",
+            "Toronto"
+        ],
+        "ats": "Direct",
+        "careers_url": "https://www.shopify.com/careers",
+        "tech_stack": [
+            "Ruby",
+            "Go",
+            "React",
+            "GraphQL",
+            "MySQL",
+            "Google Cloud",
+            "Kafka"
+        ],
+        "priority_roles": [
+            "Senior Backend Developer",
+            "Full Stack Developer",
+            "Production Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Shopify%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "twilio",
+        "name": "Twilio",
+        "category": "mnc",
+        "category_label": "Tier-1 Product MNC",
+        "pay_range": "28 - 55+ LPA (Communications & Segment)",
+        "tagline": "Customer engagement and communications platform powering SMS, voice, and data APIs.",
+        "locations": [
+            "Bengaluru",
+            "Remote"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://www.twilio.com/en-us/company/jobs",
+        "tech_stack": [
+            "Java",
+            "Go",
+            "Python",
+            "AWS",
+            "Kafka",
+            "React",
+            "Distributed Systems"
+        ],
+        "priority_roles": [
+            "Software Engineer",
+            "Cloud Infrastructure Engineer",
+            "Full Stack Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Twilio%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "pinterest",
+        "name": "Pinterest",
+        "category": "mnc",
+        "category_label": "Tier-1 Product MNC",
+        "pay_range": "32 - 60+ LPA (Visual Search & Ad Engine)",
+        "tagline": "Visual discovery engine for finding ideas like recipes, home and style inspiration.",
+        "locations": [
+            "Remote",
+            "San Francisco",
+            "Dublin"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://www.pinterestcareers.com/",
+        "tech_stack": [
+            "Python",
+            "Java",
+            "C++",
+            "React",
+            "Hadoop",
+            "Kubernetes",
+            "AWS"
+        ],
+        "priority_roles": [
+            "Software Engineer",
+            "Machine Learning Engineer",
+            "Frontend Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Pinterest%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "doordash",
+        "name": "DoorDash",
+        "category": "mnc",
+        "category_label": "Tier-1 Product MNC",
+        "pay_range": "35 - 68+ LPA (Logistics & Marketplace Engine)",
+        "tagline": "Local commerce technology platform connecting consumers with their favorite local businesses.",
+        "locations": [
+            "Bengaluru",
+            "Remote",
+            "San Francisco"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://careers.doordash.com/",
+        "tech_stack": [
+            "Kotlin",
+            "Go",
+            "Python",
+            "React Native",
+            "PostgreSQL",
+            "AWS",
+            "gRPC"
+        ],
+        "priority_roles": [
+            "Software Engineer - Logistics",
+            "Backend Engineer",
+            "Full Stack Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=DoorDash%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "dropbox",
+        "name": "Dropbox",
+        "category": "mnc",
+        "category_label": "Tier-1 Product MNC",
+        "pay_range": "32 - 62+ LPA (Virtual First Storage Platform)",
+        "tagline": "Global collaboration platform providing smart workspace tools and secure cloud storage.",
+        "locations": [
+            "Remote Worldwide",
+            "San Francisco"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://jobs.dropbox.com/",
+        "tech_stack": [
+            "Python",
+            "Go",
+            "Rust",
+            "TypeScript",
+            "React",
+            "Distributed Storage"
+        ],
+        "priority_roles": [
+            "Software Engineer",
+            "Systems Engineer",
+            "Full Stack Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Dropbox%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "zoom",
+        "name": "Zoom Video Communications",
+        "category": "mnc",
+        "category_label": "Tier-1 Product MNC",
+        "pay_range": "28 - 56+ LPA (Video Collaboration & AI)",
+        "tagline": "Communications platform delivering video meetings, phone, chat, and AI Companion tools.",
+        "locations": [
+            "Bengaluru",
+            "Remote",
+            "San Jose"
+        ],
+        "ats": "Workday",
+        "careers_url": "https://careers.zoom.us/",
+        "tech_stack": [
+            "C++",
+            "Java",
+            "Python",
+            "WebRTC",
+            "React",
+            "AWS"
+        ],
+        "priority_roles": [
+            "Software Engineer",
+            "Backend Cloud Engineer",
+            "Full Stack Developer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Zoom%20Video%20Communications%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "hubspot",
+        "name": "HubSpot",
+        "category": "mnc",
+        "category_label": "Tier-1 Product MNC",
+        "pay_range": "30 - 58+ LPA (Inbound Marketing & CRM)",
+        "tagline": "Leading cloud CRM platform helping millions of scaling companies grow better.",
+        "locations": [
+            "Remote",
+            "Cambridge",
+            "Dublin",
+            "Singapore"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://www.hubspot.com/careers",
+        "tech_stack": [
+            "Java",
+            "React",
+            "Python",
+            "MySQL",
+            "Kafka",
+            "AWS",
+            "Microservices"
+        ],
+        "priority_roles": [
+            "Software Engineer",
+            "Senior Full Stack Engineer",
+            "Platform Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=HubSpot%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "cloudflare",
+        "name": "Cloudflare",
+        "category": "mnc",
+        "category_label": "Tier-1 Product MNC",
+        "pay_range": "35 - 70+ LPA (Edge Network & Workers)",
+        "tagline": "Global connectivity cloud making everything connected to the internet secure, private, and fast.",
+        "locations": [
+            "Remote",
+            "Austin",
+            "San Francisco",
+            "London",
+            "Singapore"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://www.cloudflare.com/careers/",
+        "tech_stack": [
+            "Rust",
+            "Go",
+            "C",
+            "TypeScript",
+            "Edge Computing",
+            "Distributed Networking"
+        ],
+        "priority_roles": [
+            "Systems Engineer",
+            "Software Engineer - Edge",
+            "Full Stack Developer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Cloudflare%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "coinbase",
+        "name": "Coinbase",
+        "category": "mnc",
+        "category_label": "Tier-1 Product MNC",
+        "pay_range": "38 - 72+ LPA (Cryptocurrency Infrastructure)",
+        "tagline": "Building the cryptoeconomy\u2014a more fair, accessible, and transparent financial system.",
+        "locations": [
+            "Hyderabad",
+            "Bengaluru",
+            "Remote"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://www.coinbase.com/careers",
+        "tech_stack": [
+            "Go",
+            "React",
+            "React Native",
+            "PostgreSQL",
+            "AWS",
+            "Ruby",
+            "Cryptography"
+        ],
+        "priority_roles": [
+            "Software Engineer - Platform",
+            "Backend Engineer",
+            "Full Stack Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Coinbase%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "block",
+        "name": "Block (Square & Cash App)",
+        "category": "mnc",
+        "category_label": "Tier-1 Product MNC",
+        "pay_range": "36 - 68+ LPA (Payments & Financial Ecosystem)",
+        "tagline": "Global technology company building economic empowerment tools: Square, Cash App, TIDAL, and TBD.",
+        "locations": [
+            "Remote",
+            "San Francisco",
+            "Melbourne"
+        ],
+        "ats": "SmartRecruiters",
+        "careers_url": "https://block.xyz/careers",
+        "tech_stack": [
+            "Java",
+            "Go",
+            "Kotlin",
+            "React",
+            "AWS",
+            "MySQL",
+            "Distributed Systems"
+        ],
+        "priority_roles": [
+            "Software Engineer",
+            "Backend Engineer",
+            "Full Stack Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Block%20%28Square%20%26%20Cash%20App%29%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "visa",
+        "name": "Visa",
+        "category": "fintech_gcc",
+        "category_label": "Global FinTech & GCC",
+        "pay_range": "24 - 48+ LPA (Global Payment Processing)",
+        "tagline": "World leader in digital payments connecting consumers, merchants, and financial institutions.",
+        "locations": [
+            "Bengaluru",
+            "Mumbai"
+        ],
+        "ats": "SmartRecruiters",
+        "careers_url": "https://www.visa.co.in/careers.html",
+        "tech_stack": [
+            "Java",
+            "Distributed Transactions",
+            "React",
+            "Kafka",
+            "Microservices",
+            "Python"
+        ],
+        "priority_roles": [
+            "Staff Software Engineer",
+            "Senior Software Developer",
+            "Platform Architect"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Visa%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "mastercard",
+        "name": "Mastercard",
+        "category": "fintech_gcc",
+        "category_label": "Global FinTech & GCC",
+        "pay_range": "22 - 46+ LPA (Cyber & Payment Intelligence)",
+        "tagline": "Global technology company in the payments industry using secure, simple, smart transactions.",
+        "locations": [
+            "Pune",
+            "Gurugram",
+            "Vadodara"
+        ],
+        "ats": "Workday",
+        "careers_url": "https://careers.mastercard.com/",
+        "tech_stack": [
+            "Java",
+            "Spring Boot",
+            "Cloud Native",
+            "Angular",
+            "Python",
+            "Kubernetes"
+        ],
+        "priority_roles": [
+            "Senior Software Engineer",
+            "Lead Developer",
+            "Cloud Solutions Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Mastercard%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "amex",
+        "name": "American Express (Amex)",
+        "category": "fintech_gcc",
+        "category_label": "Global FinTech & GCC",
+        "pay_range": "20 - 42+ LPA (Global Digital Platform)",
+        "tagline": "Globally integrated payments company providing customers with access to products and insights.",
+        "locations": [
+            "Bengaluru",
+            "Gurugram"
+        ],
+        "ats": "Workday",
+        "careers_url": "https://www.americanexpress.com/en-in/careers/",
+        "tech_stack": [
+            "Java",
+            "Kotlin",
+            "React",
+            "Node.js",
+            "Docker",
+            "Distributed Architecture"
+        ],
+        "priority_roles": [
+            "Engineer II",
+            "Senior Software Engineer",
+            "Technical Architect"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=American%20Express%20%28Amex%29%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "paypal",
+        "name": "PayPal",
+        "category": "fintech_gcc",
+        "category_label": "Global FinTech & GCC",
+        "pay_range": "24 - 48+ LPA (Commerce Platforms & Risk)",
+        "tagline": "Pioneering digital payments platform driving the financial digital transformation.",
+        "locations": [
+            "Bengaluru",
+            "Chennai",
+            "Hyderabad"
+        ],
+        "ats": "Workday",
+        "careers_url": "https://careers.pypl.com/",
+        "tech_stack": [
+            "Java",
+            "Node.js",
+            "React",
+            "Distributed Systems",
+            "GCP",
+            "Python"
+        ],
+        "priority_roles": [
+            "Software Engineer - Platform",
+            "MTS 1 Software Engineer",
+            "Full Stack Developer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=PayPal%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "capital_one",
+        "name": "Capital One",
+        "category": "fintech_gcc",
+        "category_label": "Global FinTech & GCC",
+        "pay_range": "25 - 50+ LPA (Cloud Banking & Machine Learning)",
+        "tagline": "The bank that thinks and operates like a tech company, 100% on AWS cloud.",
+        "locations": [
+            "Bengaluru",
+            "Remote",
+            "McLean",
+            "Virginia"
+        ],
+        "ats": "Workday",
+        "careers_url": "https://www.capitalonecareers.com/",
+        "tech_stack": [
+            "Java",
+            "Python",
+            "AWS",
+            "Serverless",
+            "React",
+            "Kubernetes",
+            "Kafka"
+        ],
+        "priority_roles": [
+            "Senior Software Engineer",
+            "Lead Software Engineer",
+            "Data Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Capital%20One%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "fidelity",
+        "name": "Fidelity Investments",
+        "category": "fintech_gcc",
+        "category_label": "Global FinTech & GCC",
+        "pay_range": "18 - 38+ LPA (Asset Management Technology)",
+        "tagline": "Global investment and asset management tech powerhouse driving institutional systems.",
+        "locations": [
+            "Bengaluru",
+            "Chennai"
+        ],
+        "ats": "Workday",
+        "careers_url": "https://jobs.fidelity.com/",
+        "tech_stack": [
+            "Java",
+            "Spring Boot",
+            "Angular",
+            "AWS",
+            "Python",
+            "Oracle"
+        ],
+        "priority_roles": [
+            "Senior Software Engineer",
+            "Principal Software Engineer",
+            "Cloud Architect"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Fidelity%20Investments%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "citi",
+        "name": "Citi (Citigroup Technology)",
+        "category": "fintech_gcc",
+        "category_label": "Global FinTech & GCC",
+        "pay_range": "20 - 42+ LPA (Global Markets & Banking Tech)",
+        "tagline": "Global banking partner managing institutional clients, algorithmic trading, and wealth systems.",
+        "locations": [
+            "Pune",
+            "Chennai",
+            "Bengaluru",
+            "Mumbai"
+        ],
+        "ats": "Workday",
+        "careers_url": "https://jobs.citi.com/",
+        "tech_stack": [
+            "Java",
+            "Spring Boot",
+            "Microservices",
+            "React",
+            "Kafka",
+            "Python",
+            "Cloud"
+        ],
+        "priority_roles": [
+            "Applications Development Senior Programmer",
+            "VP Technology",
+            "Full Stack Lead"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Citi%20%28Citigroup%20Technology%29%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "standard_chartered",
+        "name": "Standard Chartered GBS",
+        "category": "fintech_gcc",
+        "category_label": "Global FinTech & GCC",
+        "pay_range": "18 - 36+ LPA (Global Business Services)",
+        "tagline": "International banking group technology arm developing core corporate and retail platforms.",
+        "locations": [
+            "Bengaluru",
+            "Chennai"
+        ],
+        "ats": "Direct",
+        "careers_url": "https://www.sc.com/en/careers/",
+        "tech_stack": [
+            "Java",
+            "Full Stack",
+            "Spring Boot",
+            "Cloud",
+            "API Gateway",
+            "Python"
+        ],
+        "priority_roles": [
+            "Lead Software Engineer",
+            "Full Stack Developer",
+            "Tech Architect"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Standard%20Chartered%20GBS%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "hsbc",
+        "name": "HSBC Technology India",
+        "category": "fintech_gcc",
+        "category_label": "Global FinTech & GCC",
+        "pay_range": "18 - 38+ LPA (Global IT & Digital Transformation)",
+        "tagline": "Technology backbone of one of the world's largest banking and financial services organizations.",
+        "locations": [
+            "Pune",
+            "Hyderabad"
+        ],
+        "ats": "Direct",
+        "careers_url": "https://www.hsbc.com/careers",
+        "tech_stack": [
+            "Java",
+            "Microservices",
+            "GCP",
+            "React",
+            "Python",
+            "Docker"
+        ],
+        "priority_roles": [
+            "Senior Software Engineer",
+            "Technical Specialist",
+            "Cloud Platform Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=HSBC%20Technology%20India%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "nike",
+        "name": "Nike Technology Center",
+        "category": "fintech_gcc",
+        "category_label": "Global FinTech & GCC",
+        "pay_range": "22 - 45+ LPA (Global Digital Commerce)",
+        "tagline": "The world's leading athletic brand building direct-to-consumer digital commerce and apps.",
+        "locations": [
+            "Bengaluru"
+        ],
+        "ats": "Direct",
+        "careers_url": "https://jobs.nike.com/",
+        "tech_stack": [
+            "Node.js",
+            "React",
+            "AWS",
+            "Microservices",
+            "Java",
+            "Python",
+            "Snowflake"
+        ],
+        "priority_roles": [
+            "Lead Software Engineer",
+            "Senior Full Stack Engineer",
+            "Cloud Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Nike%20Technology%20Center%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "boeing",
+        "name": "Boeing India Engineering (BIETC)",
+        "category": "fintech_gcc",
+        "category_label": "Global FinTech & GCC",
+        "pay_range": "18 - 38+ LPA (Aerospace Digital & Embedded)",
+        "tagline": "Advanced aerospace software and systems engineering center outside the United States.",
+        "locations": [
+            "Bengaluru",
+            "Chennai"
+        ],
+        "ats": "Workday",
+        "careers_url": "https://jobs.boeing.com/",
+        "tech_stack": [
+            "C++",
+            "Python",
+            "Java",
+            "Avionics",
+            "Cloud",
+            "DevOps",
+            "Embedded Systems"
+        ],
+        "priority_roles": [
+            "Software Engineer",
+            "Systems Integration Engineer",
+            "Full Stack Developer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Boeing%20India%20Engineering%20%28BIETC%29%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "mercedes",
+        "name": "Mercedes-Benz R&D India (MBRDI)",
+        "category": "fintech_gcc",
+        "category_label": "Global FinTech & GCC",
+        "pay_range": "18 - 36+ LPA (Automotive OS & Connected Cloud)",
+        "tagline": "Largest R&D center for Mercedes-Benz outside Germany, engineering MB.OS and connected luxury.",
+        "locations": [
+            "Bengaluru",
+            "Pune"
+        ],
+        "ats": "Direct",
+        "careers_url": "https://www.mbrdi.co.in/careers",
+        "tech_stack": [
+            "C++",
+            "Python",
+            "Embedded Linux",
+            "Java",
+            "AWS",
+            "Connected Car APIs"
+        ],
+        "priority_roles": [
+            "Senior Software Engineer",
+            "Autonomous Driving Specialist",
+            "Cloud Developer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Mercedes-Benz%20R%26D%20India%20%28MBRDI%29%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "intel",
+        "name": "Intel India",
+        "category": "fintech_gcc",
+        "category_label": "Global FinTech & GCC",
+        "pay_range": "22 - 48+ LPA (Silicon & AI Software)",
+        "tagline": "Global semiconductor pioneer engineering processors, silicon drivers, and oneAPI AI software.",
+        "locations": [
+            "Bengaluru",
+            "Hyderabad"
+        ],
+        "ats": "Workday",
+        "careers_url": "https://jobs.intel.com/",
+        "tech_stack": [
+            "C",
+            "C++",
+            "Python",
+            "Linux Kernel",
+            "AI Frameworks",
+            "Compilers"
+        ],
+        "priority_roles": [
+            "Software Development Engineer",
+            "Firmware Engineer",
+            "AI Software Developer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Intel%20India%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "amd",
+        "name": "AMD India",
+        "category": "fintech_gcc",
+        "category_label": "Global FinTech & GCC",
+        "pay_range": "22 - 48+ LPA (High-Performance Computing & GPU)",
+        "tagline": "Semiconductor giant driving high-performance graphics, server processors, and ROCm open software.",
+        "locations": [
+            "Bengaluru",
+            "Hyderabad"
+        ],
+        "ats": "Workday",
+        "careers_url": "https://www.amd.com/en/corporate/careers.html",
+        "tech_stack": [
+            "C++",
+            "Python",
+            "CUDA / ROCm",
+            "Linux",
+            "Compilers",
+            "Distributed Computing"
+        ],
+        "priority_roles": [
+            "MTS Software Engineer",
+            "GPU Software Developer",
+            "Systems Architect"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=AMD%20India%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "texas_instruments",
+        "name": "Texas Instruments (TI)",
+        "category": "fintech_gcc",
+        "category_label": "Global FinTech & GCC",
+        "pay_range": "24 - 45+ LPA (Embedded Processing & DSP)",
+        "tagline": "Global analog and embedded processing semiconductor manufacturer with storied Indian R&D.",
+        "locations": [
+            "Bengaluru"
+        ],
+        "ats": "Direct",
+        "careers_url": "https://careers.ti.com/",
+        "tech_stack": [
+            "Embedded C",
+            "C++",
+            "Python",
+            "DSP",
+            "RTOS",
+            "Hardware Acceleration"
+        ],
+        "priority_roles": [
+            "Software Systems Engineer",
+            "Embedded Software Developer",
+            "Applications Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Texas%20Instruments%20%28TI%29%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "dell",
+        "name": "Dell Technologies",
+        "category": "fintech_gcc",
+        "category_label": "Global FinTech & GCC",
+        "pay_range": "18 - 38+ LPA (Infrastructure & Edge Cloud)",
+        "tagline": "Global technology company transforming businesses through hybrid cloud and hardware platforms.",
+        "locations": [
+            "Bengaluru",
+            "Hyderabad"
+        ],
+        "ats": "Workday",
+        "careers_url": "https://jobs.dell.com/",
+        "tech_stack": [
+            "Java",
+            "Python",
+            "Go",
+            "Kubernetes",
+            "VMware / Virtualization",
+            "React"
+        ],
+        "priority_roles": [
+            "Senior Software Engineer",
+            "Principal Software Engineer",
+            "Full Stack Developer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Dell%20Technologies%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "figma",
+        "name": "Figma",
+        "category": "unicorn",
+        "category_label": "Product Unicorn / Scaleup",
+        "pay_range": "40 - 80+ LPA (WebAssembly & Collaboration Engine)",
+        "tagline": "Leading collaborative web design and product development platform on modern web graphics.",
+        "locations": [
+            "Remote",
+            "San Francisco",
+            "London"
+        ],
+        "ats": "Ashby",
+        "careers_url": "https://www.figma.com/careers/",
+        "tech_stack": [
+            "TypeScript",
+            "WebAssembly",
+            "Rust",
+            "C++",
+            "WebGL",
+            "React",
+            "AWS"
+        ],
+        "priority_roles": [
+            "Software Engineer",
+            "Systems Engineer",
+            "Full Stack Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Figma%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "canva",
+        "name": "Canva",
+        "category": "unicorn",
+        "category_label": "Product Unicorn / Scaleup",
+        "pay_range": "35 - 70+ LPA (Visual Suite & Generative AI)",
+        "tagline": "Global visual communications platform empowering the whole world to design anything.",
+        "locations": [
+            "Remote",
+            "Sydney",
+            "London"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://www.canva.com/careers/",
+        "tech_stack": [
+            "Java",
+            "TypeScript",
+            "React",
+            "Rust",
+            "AWS",
+            "Microservices"
+        ],
+        "priority_roles": [
+            "Software Engineer",
+            "Backend Developer",
+            "Frontend Developer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Canva%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "notion",
+        "name": "Notion",
+        "category": "unicorn",
+        "category_label": "Product Unicorn / Scaleup",
+        "pay_range": "40 - 75+ LPA (Connected Workspace & AI)",
+        "tagline": "All-in-one workspace connecting notes, docs, wikis, and project management with Notion AI.",
+        "locations": [
+            "Remote",
+            "San Francisco",
+            "Dublin"
+        ],
+        "ats": "Ashby",
+        "careers_url": "https://www.notion.so/careers",
+        "tech_stack": [
+            "TypeScript",
+            "React",
+            "Node.js",
+            "PostgreSQL",
+            "AWS",
+            "Generative AI"
+        ],
+        "priority_roles": [
+            "Software Engineer - Core Product",
+            "Infrastructure Engineer",
+            "Full Stack Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Notion%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "linear",
+        "name": "Linear",
+        "category": "unicorn",
+        "category_label": "Product Unicorn / Scaleup",
+        "pay_range": "38 - 70+ LPA (Issue Tracking & High-Craft Web)",
+        "tagline": "The issue tracking tool you will actually enjoy using\u2014built for high-performing modern software teams.",
+        "locations": [
+            "Remote Worldwide"
+        ],
+        "ats": "Ashby",
+        "careers_url": "https://linear.app/careers",
+        "tech_stack": [
+            "TypeScript",
+            "React",
+            "GraphQL",
+            "Node.js",
+            "Sync Engine",
+            "WebSockets"
+        ],
+        "priority_roles": [
+            "Full Stack Engineer",
+            "Sync Engine Engineer",
+            "Frontend Craft Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Linear%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "supabase",
+        "name": "Supabase",
+        "category": "unicorn",
+        "category_label": "Product Unicorn / Scaleup",
+        "pay_range": "35 - 65+ LPA (Open Source Firebase Alternative)",
+        "tagline": "Open source Firebase alternative built on PostgreSQL with realtime subscriptions and Auth.",
+        "locations": [
+            "Remote Worldwide"
+        ],
+        "ats": "Ashby",
+        "careers_url": "https://supabase.com/careers",
+        "tech_stack": [
+            "Elixir",
+            "PostgreSQL",
+            "TypeScript",
+            "Go",
+            "Rust",
+            "Docker"
+        ],
+        "priority_roles": [
+            "Software Engineer - Postgres",
+            "Cloud Infrastructure Engineer",
+            "Full Stack Developer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Supabase%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "vercel",
+        "name": "Vercel",
+        "category": "unicorn",
+        "category_label": "Product Unicorn / Scaleup",
+        "pay_range": "38 - 72+ LPA (Next.js & Frontend Cloud)",
+        "tagline": "The Frontend Cloud for Next.js, React, and Svelte, powering the best web experiences worldwide.",
+        "locations": [
+            "Remote Worldwide"
+        ],
+        "ats": "Ashby",
+        "careers_url": "https://vercel.com/careers",
+        "tech_stack": [
+            "TypeScript",
+            "Next.js",
+            "React",
+            "Rust",
+            "Go",
+            "Edge Networks"
+        ],
+        "priority_roles": [
+            "Software Engineer - Platform",
+            "Edge Systems Engineer",
+            "Full Stack Developer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Vercel%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "ramp",
+        "name": "Ramp",
+        "category": "unicorn",
+        "category_label": "Product Unicorn / Scaleup",
+        "pay_range": "42 - 80+ LPA (Finance Automation & Corporate Card)",
+        "tagline": "Fastest growing corporate card and finance automation platform saving companies time and money.",
+        "locations": [
+            "Remote",
+            "New York",
+            "San Francisco"
+        ],
+        "ats": "Ashby",
+        "careers_url": "https://ramp.com/careers",
+        "tech_stack": [
+            "Python",
+            "React",
+            "TypeScript",
+            "PostgreSQL",
+            "AWS",
+            "Elixir"
+        ],
+        "priority_roles": [
+            "Software Engineer",
+            "Backend Platform Engineer",
+            "Full Stack Developer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Ramp%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "retool",
+        "name": "Retool",
+        "category": "unicorn",
+        "category_label": "Product Unicorn / Scaleup",
+        "pay_range": "38 - 72+ LPA (Fast Internal Tools Platform)",
+        "tagline": "The fastest way to build internal tools\u2014connecting databases, APIs, and modern UIs.",
+        "locations": [
+            "Remote",
+            "San Francisco",
+            "London"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://retool.com/careers",
+        "tech_stack": [
+            "TypeScript",
+            "React",
+            "Node.js",
+            "PostgreSQL",
+            "Docker",
+            "Kubernetes"
+        ],
+        "priority_roles": [
+            "Software Engineer",
+            "Full Stack Engineer",
+            "Infrastructure Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Retool%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "deel",
+        "name": "Deel",
+        "category": "unicorn",
+        "category_label": "Product Unicorn / Scaleup",
+        "pay_range": "35 - 65+ LPA (Global Payroll & Compliance)",
+        "tagline": "All-in-one HR platform for global teams, managing international compliance and payroll.",
+        "locations": [
+            "Remote Worldwide"
+        ],
+        "ats": "Ashby",
+        "careers_url": "https://www.deel.com/careers",
+        "tech_stack": [
+            "Node.js",
+            "React",
+            "PostgreSQL",
+            "TypeScript",
+            "AWS",
+            "Microservices"
+        ],
+        "priority_roles": [
+            "Senior Backend Developer",
+            "Full Stack Developer",
+            "Tech Lead"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Deel%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "rippling",
+        "name": "Rippling",
+        "category": "unicorn",
+        "category_label": "Product Unicorn / Scaleup",
+        "pay_range": "38 - 75+ LPA (Unified Workforce Platform)",
+        "tagline": "Unified workforce management system managing HR, IT, and Finance on an integrated directory.",
+        "locations": [
+            "Bengaluru",
+            "Remote",
+            "San Francisco"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://www.rippling.com/careers",
+        "tech_stack": [
+            "Python",
+            "Django",
+            "React",
+            "TypeScript",
+            "MongoDB",
+            "AWS"
+        ],
+        "priority_roles": [
+            "Staff Software Engineer",
+            "Backend Developer",
+            "Full Stack Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Rippling%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "freshworks",
+        "name": "Freshworks",
+        "category": "unicorn",
+        "category_label": "Product Unicorn / Scaleup",
+        "pay_range": "20 - 45+ LPA (Cloud Customer Engagement SaaS)",
+        "tagline": "Nasdaq-listed Indian SaaS success story building fresh, modern business software for IT and CRM.",
+        "locations": [
+            "Chennai",
+            "Bengaluru"
+        ],
+        "ats": "SmartRecruiters",
+        "careers_url": "https://www.freshworks.com/company/careers/",
+        "tech_stack": [
+            "Ruby on Rails",
+            "Java",
+            "Python",
+            "Ember",
+            "React",
+            "AWS",
+            "Kafka"
+        ],
+        "priority_roles": [
+            "Lead Software Engineer",
+            "Senior Software Developer",
+            "Cloud Architect"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Freshworks%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "spotify",
+        "name": "Spotify",
+        "category": "europe_apac",
+        "category_label": "European / APAC Tech Giant",
+        "pay_range": "36 - 72+ LPA (Audio Streaming & Recommendations)",
+        "tagline": "World's most popular audio streaming subscription service with legendary engineering culture.",
+        "locations": [
+            "Remote",
+            "Stockholm",
+            "London",
+            "New York"
+        ],
+        "ats": "Direct",
+        "careers_url": "https://www.lifeatspotify.com/jobs",
+        "tech_stack": [
+            "Java",
+            "Python",
+            "C++",
+            "GCP",
+            "Docker",
+            "Kafka",
+            "React"
+        ],
+        "priority_roles": [
+            "Senior Software Engineer",
+            "Backend Developer",
+            "Data Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Spotify%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "asml",
+        "name": "ASML",
+        "category": "europe_apac",
+        "category_label": "European / APAC Tech Giant",
+        "pay_range": "32 - 65+ LPA (Lithography Systems & Nanometer Tech)",
+        "tagline": "The world's leading semiconductor equipment maker producing extreme ultraviolet (EUV) photolithography machines.",
+        "locations": [
+            "Bengaluru",
+            "Veldhoven (Netherlands)",
+            "Remote"
+        ],
+        "ats": "Workday",
+        "careers_url": "https://www.asml.com/en/careers",
+        "tech_stack": [
+            "C++",
+            "Python",
+            "Linux",
+            "Mathematical Algorithms",
+            "Embedded Real-Time",
+            "Java"
+        ],
+        "priority_roles": [
+            "Software Design Engineer",
+            "Algorithm Developer",
+            "Embedded Specialist"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=ASML%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "booking",
+        "name": "Booking.com",
+        "category": "europe_apac",
+        "category_label": "European / APAC Tech Giant",
+        "pay_range": "30 - 62+ LPA (Travel E-commerce & High QPS)",
+        "tagline": "Global travel e-commerce leader operating at massive global scale with thousands of microservices.",
+        "locations": [
+            "Bengaluru",
+            "Amsterdam",
+            "Remote"
+        ],
+        "ats": "Direct",
+        "careers_url": "https://jobs.booking.com/",
+        "tech_stack": [
+            "Java",
+            "Perl / Python",
+            "React",
+            "Kafka",
+            "MySQL",
+            "Kubernetes",
+            "AWS"
+        ],
+        "priority_roles": [
+            "Software Engineer",
+            "Full Stack Developer",
+            "Machine Learning Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Booking.com%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "adyen",
+        "name": "Adyen",
+        "category": "europe_apac",
+        "category_label": "European / APAC Tech Giant",
+        "pay_range": "36 - 70+ LPA (Single Payment Platform)",
+        "tagline": "European fintech giant providing end-to-end payments infrastructure for top global brands.",
+        "locations": [
+            "Amsterdam",
+            "London",
+            "Singapore",
+            "Remote"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://careers.adyen.com/",
+        "tech_stack": [
+            "Java",
+            "PostgreSQL",
+            "React",
+            "Distributed Architecture",
+            "High Security"
+        ],
+        "priority_roles": [
+            "Software Engineer - Payments",
+            "Backend Developer",
+            "Infrastructure Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Adyen%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "revolut",
+        "name": "Revolut",
+        "category": "europe_apac",
+        "category_label": "European / APAC Tech Giant",
+        "pay_range": "32 - 65+ LPA (Global Neobank & Trading)",
+        "tagline": "Global financial super-app with 45+ million customers managing currency exchange, stock, and crypto.",
+        "locations": [
+            "Bengaluru",
+            "Remote",
+            "London"
+        ],
+        "ats": "Lever",
+        "careers_url": "https://www.revolut.com/careers/",
+        "tech_stack": [
+            "Java",
+            "Kotlin",
+            "React",
+            "GCP",
+            "PostgreSQL",
+            "Docker"
+        ],
+        "priority_roles": [
+            "Senior Software Engineer",
+            "Backend Developer",
+            "Frontend Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Revolut%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "klarna",
+        "name": "Klarna",
+        "category": "europe_apac",
+        "category_label": "European / APAC Tech Giant",
+        "pay_range": "30 - 60+ LPA (AI-Powered Commerce & BNPL)",
+        "tagline": "AI-powered global payments network and shopping destination modernizing e-commerce.",
+        "locations": [
+            "Stockholm",
+            "Berlin",
+            "Remote"
+        ],
+        "ats": "Workday",
+        "careers_url": "https://www.klarna.com/careers/",
+        "tech_stack": [
+            "JavaScript",
+            "Node.js",
+            "Java",
+            "Python",
+            "AWS",
+            "React"
+        ],
+        "priority_roles": [
+            "Software Engineer",
+            "Full Stack Developer",
+            "Data Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Klarna%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "delivery_hero",
+        "name": "Delivery Hero",
+        "category": "europe_apac",
+        "category_label": "European / APAC Tech Giant",
+        "pay_range": "28 - 56+ LPA (Quick Commerce & Global Food)",
+        "tagline": "World's leading local delivery platform operating in over 70 countries.",
+        "locations": [
+            "Berlin",
+            "Remote",
+            "Singapore"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://careers.deliveryhero.com/",
+        "tech_stack": [
+            "Python",
+            "Go",
+            "Kotlin",
+            "React",
+            "Kubernetes",
+            "AWS",
+            "Kafka"
+        ],
+        "priority_roles": [
+            "Senior Software Engineer",
+            "Backend Engineer",
+            "Full Stack Developer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Delivery%20Hero%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "wise",
+        "name": "Wise (TransferWise)",
+        "category": "europe_apac",
+        "category_label": "European / APAC Tech Giant",
+        "pay_range": "32 - 62+ LPA (Cross-Border Financial Engine)",
+        "tagline": "Global tech company building the best way to move and manage money around the world without borders.",
+        "locations": [
+            "London",
+            "Tallinn",
+            "Singapore",
+            "Remote"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://www.wise.jobs/",
+        "tech_stack": [
+            "Java",
+            "Spring Boot",
+            "React",
+            "PostgreSQL",
+            "AWS",
+            "Microservices"
+        ],
+        "priority_roles": [
+            "Software Engineer",
+            "Backend Developer",
+            "Product Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Wise%20%28TransferWise%29%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "bytedance",
+        "name": "ByteDance (TikTok)",
+        "category": "europe_apac",
+        "category_label": "European / APAC Tech Giant",
+        "pay_range": "40 - 80+ LPA (High QPS Algorithms & Feed)",
+        "tagline": "Global tech giant operating TikTok, building billion-user recommendation engines and distributed systems.",
+        "locations": [
+            "Singapore",
+            "San Jose",
+            "London",
+            "Remote"
+        ],
+        "ats": "Direct",
+        "careers_url": "https://jobs.bytedance.com/en",
+        "tech_stack": [
+            "Go",
+            "Python",
+            "C++",
+            "Distributed Systems",
+            "Kubernetes",
+            "High Scale Redis"
+        ],
+        "priority_roles": [
+            "Software Engineer - Platform",
+            "Backend Engineer",
+            "Algorithm Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=ByteDance%20%28TikTok%29%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "grab",
+        "name": "Grab",
+        "category": "europe_apac",
+        "category_label": "European / APAC Tech Giant",
+        "pay_range": "32 - 65+ LPA (Southeast Asia Superapp)",
+        "tagline": "Southeast Asia's leading superapp providing deliveries, mobility, and financial services.",
+        "locations": [
+            "Bengaluru",
+            "Singapore"
+        ],
+        "ats": "Workday",
+        "careers_url": "https://grab.careers/",
+        "tech_stack": [
+            "Go",
+            "Python",
+            "React Native",
+            "Kafka",
+            "AWS",
+            "MySQL"
+        ],
+        "priority_roles": [
+            "Lead Software Engineer",
+            "Senior Backend Engineer",
+            "Full Stack Developer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Grab%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "sea_group",
+        "name": "Sea Group (Shopee & Garena)",
+        "category": "europe_apac",
+        "category_label": "European / APAC Tech Giant",
+        "pay_range": "32 - 62+ LPA (Gaming & E-commerce Hub)",
+        "tagline": "Global consumer internet company operating Shopee e-commerce and Garena digital entertainment.",
+        "locations": [
+            "Bengaluru",
+            "Singapore"
+        ],
+        "ats": "Direct",
+        "careers_url": "https://career.sea.com/",
+        "tech_stack": [
+            "Go",
+            "Python",
+            "React",
+            "C++",
+            "MySQL",
+            "Distributed Architecture"
+        ],
+        "priority_roles": [
+            "Software Engineer",
+            "Backend Developer",
+            "Full Stack Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Sea%20Group%20%28Shopee%20%26%20Garena%29%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "rakuten",
+        "name": "Rakuten India",
+        "category": "europe_apac",
+        "category_label": "European / APAC Tech Giant",
+        "pay_range": "20 - 45+ LPA (Global Innovation Center)",
+        "tagline": "Japanese internet and fintech giant's key global engineering center powering Rakuten ecosystem.",
+        "locations": [
+            "Bengaluru"
+        ],
+        "ats": "Direct",
+        "careers_url": "https://rakuten.careers/",
+        "tech_stack": [
+            "Java",
+            "Python",
+            "Cloud Native",
+            "React",
+            "Kafka",
+            "Data Engineering"
+        ],
+        "priority_roles": [
+            "Senior Software Engineer",
+            "Lead Developer",
+            "Cloud Solutions Architect"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Rakuten%20India%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "two_sigma",
+        "name": "Two Sigma",
+        "category": "hft",
+        "category_label": "HFT & Quantitative Trading",
+        "pay_range": "60 LPA - 1.4 Cr+ (Quantitative Systems)",
+        "tagline": "Financial sciences company using machine learning, distributed computing, and data science to trade globally.",
+        "locations": [
+            "Remote",
+            "New York",
+            "London",
+            "Tokyo"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://www.twosigma.com/careers/",
+        "tech_stack": [
+            "C++",
+            "Python",
+            "Java",
+            "Distributed Systems",
+            "Linux Kernel",
+            "Low Latency"
+        ],
+        "priority_roles": [
+            "Quantitative Software Engineer",
+            "Systems Engineer",
+            "Data Platform Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Two%20Sigma%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "millennium",
+        "name": "Millennium Management",
+        "category": "hft",
+        "category_label": "HFT & Quantitative Trading",
+        "pay_range": "50 LPA - 1.2 Cr+ (Quantitative Tech)",
+        "tagline": "Global alternative investment management firm with cutting-edge algorithmic execution platforms.",
+        "locations": [
+            "Bengaluru",
+            "New York",
+            "London",
+            "Singapore"
+        ],
+        "ats": "Workday",
+        "careers_url": "https://www.mlpm.com/careers/",
+        "tech_stack": [
+            "C++",
+            "Python",
+            "Low Latency",
+            "KDB+",
+            "Linux",
+            "Distributed Systems"
+        ],
+        "priority_roles": [
+            "Quantitative Software Engineer",
+            "Trading Systems Developer",
+            "Cloud Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Millennium%20Management%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "point72",
+        "name": "Point72",
+        "category": "hft",
+        "category_label": "HFT & Quantitative Trading",
+        "pay_range": "50 LPA - 1.1 Cr+ (Cubist Systematic Strategies)",
+        "tagline": "Global asset manager employing quantitative modeling and modern technology to trade public equity.",
+        "locations": [
+            "Remote",
+            "New York",
+            "London",
+            "Singapore"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://point72.com/careers/",
+        "tech_stack": [
+            "C++",
+            "Python",
+            "Data Pipelines",
+            "Linux",
+            "Trading Infrastructure"
+        ],
+        "priority_roles": [
+            "Quantitative Developer",
+            "Software Engineer - Trading",
+            "Systems Architect"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Point72%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "optiver",
+        "name": "Optiver",
+        "category": "hft",
+        "category_label": "HFT & Quantitative Trading",
+        "pay_range": "65 LPA - 1.5 Cr+ (Market Making & Low Latency)",
+        "tagline": "Leading global market maker improving financial markets with cutting-edge proprietary trading tech.",
+        "locations": [
+            "Amsterdam",
+            "Sydney",
+            "Singapore",
+            "Chicago"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://optiver.com/working-at-optiver/career-opportunities/",
+        "tech_stack": [
+            "Modern C++ (C++20)",
+            "FPGA",
+            "Python",
+            "Linux Kernel",
+            "Hardware Acceleration"
+        ],
+        "priority_roles": [
+            "Software Engineer - Execution",
+            "FPGA Engineer",
+            "Core Developer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Optiver%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "imc_trading",
+        "name": "IMC Trading",
+        "category": "hft",
+        "category_label": "HFT & Quantitative Trading",
+        "pay_range": "60 LPA - 1.4 Cr+ (Algorithmic Trading & FPGA)",
+        "tagline": "Top algorithmic market maker trading on major exchanges worldwide with sub-microsecond latency.",
+        "locations": [
+            "Amsterdam",
+            "Sydney",
+            "Chicago",
+            "Mumbai"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://www.imc.com/careers/",
+        "tech_stack": [
+            "C++",
+            "FPGA",
+            "Python",
+            "Java",
+            "Linux",
+            "Low Latency Networking"
+        ],
+        "priority_roles": [
+            "Software Engineer",
+            "FPGA Developer",
+            "Hardware Acceleration Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=IMC%20Trading%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "ge_vernova",
+        "name": "GE Vernova / Healthcare",
+        "category": "enterprise_sap",
+        "category_label": "Enterprise & Industrial Hub",
+        "pay_range": "14 - 30+ LPA (Industrial IoT & Healthcare Tech)",
+        "tagline": "Global industrial technology company pioneering digital energy grids and medical software systems.",
+        "locations": [
+            "Bengaluru",
+            "Hyderabad"
+        ],
+        "ats": "Workday",
+        "careers_url": "https://jobs.gecareers.com/",
+        "tech_stack": [
+            "Java",
+            "Python",
+            "Cloud",
+            "IoT",
+            "C++",
+            "Kubernetes",
+            "Microservices"
+        ],
+        "priority_roles": [
+            "Staff Software Engineer",
+            "Full Stack Developer",
+            "Cloud Architect"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=GE%20Vernova%20/%20Healthcare%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "abb",
+        "name": "ABB India",
+        "category": "enterprise_sap",
+        "category_label": "Enterprise & Industrial Hub",
+        "pay_range": "12 - 28+ LPA (Industrial Automation & Robotics)",
+        "tagline": "Technology leader in electrification and automation enabling a more sustainable and resource-efficient future.",
+        "locations": [
+            "Bengaluru",
+            "Chennai"
+        ],
+        "ats": "Workday",
+        "careers_url": "https://careers.abb/global/en",
+        "tech_stack": [
+            "C#",
+            ".NET Core",
+            "Cloud",
+            "Python",
+            "Industrial IoT",
+            "React"
+        ],
+        "priority_roles": [
+            "Senior Software Developer",
+            "R&D Software Engineer",
+            "Systems Architect"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=ABB%20India%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "john_deere",
+        "name": "John Deere Technology Center (JDTCI)",
+        "category": "enterprise_sap",
+        "category_label": "Enterprise & Industrial Hub",
+        "pay_range": "15 - 32+ LPA (Precision Ag & Cloud Platform)",
+        "tagline": "Global agricultural and heavy machinery leader engineering autonomous tractors and precision cloud software.",
+        "locations": [
+            "Pune",
+            "Bengaluru"
+        ],
+        "ats": "Workday",
+        "careers_url": "https://www.deere.com/en/our-company/john-deere-careers/",
+        "tech_stack": [
+            "Java",
+            "Python",
+            "AWS",
+            "IoT",
+            "Embedded",
+            "React"
+        ],
+        "priority_roles": [
+            "Software Engineer",
+            "Cloud Platform Engineer",
+            "Full Stack Developer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=John%20Deere%20Technology%20Center%20%28JDTCI%29%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "together_ai",
+        "name": "Together AI",
+        "category": "ai",
+        "category_label": "Frontier AI & ML Research",
+        "pay_range": "$150k - $380k+ / Remote (Cloud GPU & Inference)",
+        "tagline": "Leading cloud platform for building and running generative AI models with state-of-the-art inference engines.",
+        "locations": [
+            "Remote Worldwide",
+            "San Francisco"
+        ],
+        "ats": "Ashby",
+        "careers_url": "https://www.together.ai/careers",
+        "tech_stack": [
+            "PyTorch",
+            "CUDA",
+            "C++",
+            "Python",
+            "Kubernetes",
+            "Distributed Training"
+        ],
+        "priority_roles": [
+            "Inference Systems Engineer",
+            "Cloud Infrastructure Engineer",
+            "Full Stack Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Together%20AI%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "groq",
+        "name": "Groq",
+        "category": "ai",
+        "category_label": "Frontier AI & ML Research",
+        "pay_range": "$160k - $400k+ / Remote (LPU Inference Engine)",
+        "tagline": "Creator of the LPU (Language Processing Unit), setting world records for instantaneous real-time AI token generation.",
+        "locations": [
+            "Remote Worldwide",
+            "Mountain View"
+        ],
+        "ats": "Greenhouse",
+        "careers_url": "https://groq.com/careers/",
+        "tech_stack": [
+            "Compilers",
+            "C++",
+            "Python",
+            "Silicon Architecture",
+            "Distributed Systems"
+        ],
+        "priority_roles": [
+            "Compiler Engineer",
+            "Systems Software Engineer",
+            "Cloud API Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Groq%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "anyscale",
+        "name": "Anyscale",
+        "category": "ai",
+        "category_label": "Frontier AI & ML Research",
+        "pay_range": "$150k - $360k+ / Remote (Ray Compute Platform)",
+        "tagline": "The AI compute platform built by the creators of Ray, powering production training and LLM fine-tuning.",
+        "locations": [
+            "Remote",
+            "San Francisco"
+        ],
+        "ats": "Ashby",
+        "careers_url": "https://www.anyscale.com/careers",
+        "tech_stack": [
+            "Ray",
+            "Python",
+            "C++",
+            "Distributed Systems",
+            "Kubernetes",
+            "AWS"
+        ],
+        "priority_roles": [
+            "Distributed Systems Engineer",
+            "Backend Cloud Engineer",
+            "Full Stack Engineer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Anyscale%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
+    },
+    {
+        "id": "cursor",
+        "name": "Cursor (Anysphere)",
+        "category": "ai",
+        "category_label": "Frontier AI & ML Research",
+        "pay_range": "$180k - $450k+ / Remote (AI Code Editor)",
+        "tagline": "The AI-first code editor built on VS Code, empowering millions of developers to write code 10x faster.",
+        "locations": [
+            "Remote Worldwide",
+            "San Francisco"
+        ],
+        "ats": "Ashby",
+        "careers_url": "https://www.cursor.com/careers",
+        "tech_stack": [
+            "TypeScript",
+            "Rust",
+            "C++",
+            "VS Code Architecture",
+            "Python",
+            "PyTorch"
+        ],
+        "priority_roles": [
+            "Core Editor Systems Engineer",
+            "Model Training Engineer",
+            "Full Stack Developer"
+        ],
+        "google_jobs_url": "https://www.google.com/search?q=Cursor%20%28Anysphere%29%20%28Software%20Engineer%20OR%20Developer%29%20%28%22Full%20Stack%22%20OR%20%22Backend%22%20OR%20%22Frontend%22%20OR%20%22AI%22%20OR%20%22Cloud%22%20OR%20%22Python%22%20OR%20%22Java%22%29&ibp=htl;jobs"
     }
 ]
 

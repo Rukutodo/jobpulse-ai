@@ -137,7 +137,7 @@ async def reset_resume():
 
 @app.get("/api/companies")
 async def list_companies(
-    category: str = Query("all", description="Category: hft, mnc, unicorn, enterprise_sap, ai, all"),
+    category: str = Query("all", description="Category: hft, mnc, unicorn, enterprise_sap, ai, europe_apac, all"),
     search: str = Query("", description="Keyword search")
 ):
     """Returns curated directory of top firms, MNCs, and product companies with direct career links."""
@@ -145,6 +145,32 @@ async def list_companies(
     return {
         "count": len(results),
         "companies": results
+    }
+
+@app.get("/api/companies/resolve")
+async def resolve_company(name: str = Query(..., description="Company name to dynamically resolve")):
+    """
+    Dynamically generates direct un-paywalled ATS links, Google Jobs search, and metadata
+    for ANY company worldwide, even if not pre-indexed in the static directory.
+    """
+    clean_name = name.strip()
+    if not clean_name:
+        raise HTTPException(status_code=400, detail="Company name is required")
+        
+    import urllib.parse
+    encoded_name = urllib.parse.quote(clean_name)
+    
+    return {
+        "name": clean_name,
+        "is_dynamic": True,
+        "google_jobs_url": f"https://www.google.com/search?q={encoded_name}+%28Software+Engineer+OR+Developer+OR+Full+Stack+OR+Backend+OR+Frontend+OR+Cloud+OR+AI%29&ibp=htl;jobs",
+        "ats_shortcuts": {
+            "greenhouse": f"https://www.google.com/search?q=site%3Aboards.greenhouse.io+{encoded_name}",
+            "lever": f"https://www.google.com/search?q=site%3Ajobs.lever.co+{encoded_name}",
+            "ashby": f"https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+{encoded_name}",
+            "workday": f"https://www.google.com/search?q=site%3Amyworkdayjobs.com+{encoded_name}",
+            "direct": f"https://www.google.com/search?q={encoded_name}+official+careers+jobs"
+        }
     }
 
 
@@ -183,7 +209,7 @@ async def search_live_jobs(
     return {
         "count": len(scored_jobs),
         "total_available": len(raw_jobs),
-        "jobs": scored_jobs[:60]  # Return top 60 matching jobs for performance
+        "jobs": scored_jobs[:100]  # Return top 100 matching jobs for high coverage
     }
 
 @app.post("/api/analyze-jd")

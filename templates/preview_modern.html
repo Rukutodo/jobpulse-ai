@@ -263,7 +263,7 @@
                   <i data-lucide="radio" class="w-3 h-3 text-orange-600"></i>
                   Live Un-Paywalled Feed
                 </span>
-                <span class="text-[10px] text-zinc-400 font-mono hidden sm:inline">• Jobicy, Arbeitnow, Himalayas, Remotive, HN</span>
+                <span class="text-[10px] text-zinc-400 font-mono hidden sm:inline">• 8 Global Free Aggregators (WWR, Jobicy, Arbeitnow, Himalayas, Remotive, Python.org, LaraJobs, HN)</span>
               </div>
               <button onclick="loadJobs(true)" class="text-[11px] font-mono uppercase text-zinc-700 hover:text-orange-600 hover:border-orange-300 flex items-center gap-1.5 px-2.5 py-1 bg-zinc-50 border border-zinc-200 transition" title="Force refresh live feeds">
                 <i data-lucide="refresh-cw" class="w-3 h-3 text-orange-600" id="refresh-icon"></i>
@@ -287,11 +287,14 @@
               </div>
               <div class="sm:col-span-3">
                 <select id="search-source" class="w-full bg-white border border-zinc-200 px-2.5 py-2 text-xs text-zinc-700 focus:outline-none focus:border-orange-500 transition font-mono">
-                  <option value="all">All Free Boards</option>
+                  <option value="all">All 8 Free Boards</option>
+                  <option value="WeWorkRemotely">WeWorkRemotely</option>
                   <option value="Jobicy">Jobicy</option>
                   <option value="Arbeitnow">Arbeitnow</option>
                   <option value="Himalayas">Himalayas</option>
                   <option value="Remotive">Remotive</option>
+                  <option value="Python.org">Python.org</option>
+                  <option value="LaraJobs">LaraJobs</option>
                   <option value="HackerNews (Direct)">HackerNews</option>
                 </select>
               </div>
@@ -359,15 +362,41 @@
 
         <!-- Category Segmented Buttons: Scrollable on small screens -->
         <div class="flex items-center gap-1 pt-3 border-t border-zinc-100 overflow-x-auto no-scrollbar">
-          <button onclick="filterCompaniesCategory('all', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase bg-orange-600 text-white font-extrabold border border-orange-600 whitespace-nowrap flex-shrink-0 shadow-sm">All Firms (86)</button>
-          <button onclick="filterCompaniesCategory('service', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">Top IT Services (22)</button>
-          <button onclick="filterCompaniesCategory('mnc', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">Product MNCs (17)</button>
-          <button onclick="filterCompaniesCategory('fintech_gcc', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">GCCs & Banks (11)</button>
-          <button onclick="filterCompaniesCategory('unicorn', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">Unicorns (12)</button>
-          <button onclick="filterCompaniesCategory('hft', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">HFT / Quant (9)</button>
-          <button onclick="filterCompaniesCategory('enterprise_sap', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">Enterprise & SAP (7)</button>
-          <button onclick="filterCompaniesCategory('ai', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">AI Labs (8)</button>
+          <button onclick="filterCompaniesCategory('all', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase bg-orange-600 text-white font-extrabold border border-orange-600 whitespace-nowrap flex-shrink-0 shadow-sm">All Firms (162)</button>
+          <button onclick="filterCompaniesCategory('service', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">Top IT Services (28)</button>
+          <button onclick="filterCompaniesCategory('mnc', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">Product MNCs (36)</button>
+          <button onclick="filterCompaniesCategory('fintech_gcc', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">GCCs & Banks (27)</button>
+          <button onclick="filterCompaniesCategory('unicorn', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">Unicorns & Scaleups (23)</button>
+          <button onclick="filterCompaniesCategory('europe_apac', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">Europe & APAC (12)</button>
+          <button onclick="filterCompaniesCategory('hft', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">HFT / Quant (14)</button>
+          <button onclick="filterCompaniesCategory('enterprise_sap', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">Enterprise & Industrial (10)</button>
+          <button onclick="filterCompaniesCategory('ai', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">AI Labs (12)</button>
         </div>
+      </div>
+
+      <!-- Instant Global Company Dynamic Resolver Bar -->
+      <div class="sharp-card p-3.5 sm:p-4 bg-orange-50/30 border border-orange-200">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+          <div class="flex items-center gap-2">
+            <span class="p-1.5 bg-orange-600 text-white flex-shrink-0 shadow-sm">
+              <i data-lucide="globe" class="w-4 h-4"></i>
+            </span>
+            <div>
+              <h3 class="text-xs font-bold text-zinc-900 font-mono uppercase">Instant Global Company Resolver</h3>
+              <p class="text-[11px] text-zinc-600 font-sans">Target <strong class="font-bold text-zinc-900">ANY company worldwide</strong> (even if not listed below) — generates direct un-paywalled ATS and live jobs portals instantly.</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 w-full sm:w-auto">
+            <input type="text" id="dynamic-company-input" onkeydown="if(event.key==='Enter') triggerDynamicCompanyResolve()" placeholder="Type any firm (e.g. Figma, Brex)..." 
+              class="w-full sm:w-64 bg-white border border-zinc-200 px-3 py-1.5 text-xs text-zinc-900 placeholder-zinc-400 focus:outline-none focus:border-orange-500 font-mono">
+            <button onclick="triggerDynamicCompanyResolve()" class="px-3 py-1.5 bg-zinc-900 hover:bg-orange-600 text-white text-xs font-mono uppercase font-bold flex items-center gap-1.5 transition flex-shrink-0 shadow-sm">
+              <span>Resolve</span>
+              <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Dynamic Result Container -->
+        <div id="dynamic-company-result" class="hidden mt-3 pt-3 border-t border-orange-200"></div>
       </div>
 
       <!-- Companies Bento Grid: Responsive -->
@@ -1203,14 +1232,95 @@
         companies = getClientFallbackCompanies(currentCompanyCategory, currentCompanySearch);
       }
 
-      if (companies.length === 0) {
-        grid.innerHTML = `
-          <div class="col-span-full py-16 text-center text-zinc-400 sharp-card">
-            <i data-lucide="building" class="w-8 h-8 mx-auto text-zinc-300 mb-2"></i>
-            <p class="text-xs font-semibold text-zinc-800 font-mono uppercase">No companies found</p>
-            <p class="text-[11px] text-zinc-500 mt-1 font-mono">Try another category or clear the search keywords.</p>
+    function triggerDynamicCompanyResolve() {
+      const input = document.getElementById('dynamic-company-input');
+      if (input && input.value.trim()) {
+        resolveAndShowDynamicCompany(input.value.trim());
+      }
+    }
+
+    function resolveAndShowDynamicCompany(name) {
+      if (!name || !name.trim()) return;
+      const cleanName = name.trim();
+      const enc = encodeURIComponent(cleanName);
+      const resContainer = document.getElementById('dynamic-company-result');
+      if (!resContainer) return;
+
+      resContainer.className = 'mt-3 pt-3 border-t border-orange-200 block';
+      resContainer.innerHTML = `
+        <div class="sharp-card p-3.5 sm:p-4 bg-white border border-orange-300">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-zinc-100 pb-2.5">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-[9px] px-1.5 py-0.5 bg-orange-600 text-white font-mono uppercase font-bold tracking-wider">Dynamic ATS Resolver</span>
+                <h4 class="text-xs sm:text-sm font-extrabold text-zinc-900 font-mono">${escapeHtml(cleanName)}</h4>
+              </div>
+              <p class="text-[11px] text-zinc-600 mt-1 font-mono">Un-paywalled career portals and live job queries generated for <strong>${escapeHtml(cleanName)}</strong>:</p>
+            </div>
+            <button onclick="document.getElementById('dynamic-company-result').className='hidden'" class="text-zinc-400 hover:text-zinc-800 text-[11px] font-mono uppercase">Close</button>
           </div>
-        `;
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 mt-3">
+            <a href="https://www.google.com/search?q=${enc}+%28Software+Engineer+OR+Developer+OR+Full+Stack+OR+Backend+OR+Cloud+OR+AI%29&ibp=htl;jobs" target="_blank" rel="noopener noreferrer" 
+              class="px-2.5 py-2 bg-orange-600 hover:bg-orange-700 text-white text-[11px] font-mono uppercase font-bold flex items-center justify-center gap-1 transition shadow-sm">
+              <span>Google Jobs</span>
+              <i data-lucide="arrow-up-right" class="w-3 h-3"></i>
+            </a>
+            <a href="https://www.google.com/search?q=site%3Aboards.greenhouse.io+${enc}" target="_blank" rel="noopener noreferrer" 
+              class="px-2.5 py-2 bg-white hover:bg-zinc-50 text-zinc-800 border border-zinc-200 text-[11px] font-mono uppercase font-medium flex items-center justify-center gap-1 transition">
+              <span>Greenhouse</span>
+              <i data-lucide="external-link" class="w-3 h-3 text-zinc-400"></i>
+            </a>
+            <a href="https://www.google.com/search?q=site%3Ajobs.lever.co+${enc}" target="_blank" rel="noopener noreferrer" 
+              class="px-2.5 py-2 bg-white hover:bg-zinc-50 text-zinc-800 border border-zinc-200 text-[11px] font-mono uppercase font-medium flex items-center justify-center gap-1 transition">
+              <span>Lever ATS</span>
+              <i data-lucide="external-link" class="w-3 h-3 text-zinc-400"></i>
+            </a>
+            <a href="https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+${enc}" target="_blank" rel="noopener noreferrer" 
+              class="px-2.5 py-2 bg-white hover:bg-zinc-50 text-zinc-800 border border-zinc-200 text-[11px] font-mono uppercase font-medium flex items-center justify-center gap-1 transition">
+              <span>Ashby ATS</span>
+              <i data-lucide="external-link" class="w-3 h-3 text-zinc-400"></i>
+            </a>
+            <a href="https://www.google.com/search?q=site%3Amyworkdayjobs.com+${enc}" target="_blank" rel="noopener noreferrer" 
+              class="px-2.5 py-2 bg-white hover:bg-zinc-50 text-zinc-800 border border-zinc-200 text-[11px] font-mono uppercase font-medium flex items-center justify-center gap-1 transition">
+              <span>Workday</span>
+              <i data-lucide="external-link" class="w-3 h-3 text-zinc-400"></i>
+            </a>
+            <a href="https://www.google.com/search?q=${enc}+official+careers+jobs" target="_blank" rel="noopener noreferrer" 
+              class="px-2.5 py-2 bg-zinc-900 hover:bg-orange-600 text-white text-[11px] font-mono uppercase font-bold flex items-center justify-center gap-1 transition shadow-sm">
+              <span>Direct Portal</span>
+              <i data-lucide="search" class="w-3 h-3"></i>
+            </a>
+          </div>
+        </div>
+      `;
+      lucide.createIcons();
+      resContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+      if (companies.length === 0) {
+        if (currentCompanySearch && currentCompanySearch.trim()) {
+          grid.innerHTML = `
+            <div class="col-span-full py-12 px-4 text-center sharp-card space-y-3">
+              <i data-lucide="compass" class="w-8 h-8 mx-auto text-orange-600 mb-2"></i>
+              <div>
+                <p class="text-xs font-bold text-zinc-900 font-mono uppercase">"${escapeHtml(currentCompanySearch)}" is not in the curated list</p>
+                <p class="text-[11px] text-zinc-500 mt-1 font-mono">You can still dynamically resolve it across all global ATS portals and Google Jobs.</p>
+              </div>
+              <button onclick="resolveAndShowDynamicCompany('${escapeHtml(currentCompanySearch)}')" class="px-3.5 py-2 bg-orange-600 hover:bg-orange-500 text-white text-xs font-mono font-bold uppercase transition inline-flex items-center gap-1.5 shadow-sm">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                <span>Dynamically Resolve "${escapeHtml(currentCompanySearch)}" Now</span>
+              </button>
+            </div>
+          `;
+        } else {
+          grid.innerHTML = `
+            <div class="col-span-full py-16 text-center text-zinc-400 sharp-card">
+              <i data-lucide="building" class="w-8 h-8 mx-auto text-zinc-300 mb-2"></i>
+              <p class="text-xs font-semibold text-zinc-800 font-mono uppercase">No companies found</p>
+              <p class="text-[11px] text-zinc-500 mt-1 font-mono">Try another category or clear the search keywords.</p>
+            </div>
+          `;
+        }
         lucide.createIcons();
         return;
       }
