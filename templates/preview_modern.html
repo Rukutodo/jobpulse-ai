@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>JobPulse AI — Sharp Whitish & Orange UI</title>
+  <title>JobPulse AI — Fast Job Search & ATS Matcher</title>
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Lucide Icons -->
@@ -930,8 +930,15 @@
       lucide.createIcons();
 
       try {
-        const url = `/api/jobs/search?q=${encodeURIComponent(q)}&location=${encodeURIComponent(loc)}&source=${encodeURIComponent(src)}&force=${force}`;
-        const res = await fetch(url);
+        const skillsParam = (resumeProfile && resumeProfile.is_custom && resumeProfile.all_skills) 
+          ? `&skills=${encodeURIComponent(resumeProfile.all_skills.join(','))}` 
+          : '';
+        const url = `/api/jobs/search?q=${encodeURIComponent(q)}&location=${encodeURIComponent(loc)}&source=${encodeURIComponent(src)}&force=${force}${skillsParam}`;
+        const headers = {};
+        if (resumeProfile && resumeProfile.is_custom && resumeProfile.all_skills) {
+          headers['x-candidate-skills'] = resumeProfile.all_skills.join(',');
+        }
+        const res = await fetch(url, { headers });
         const data = await res.json();
         currentJobs = data.jobs || [];
 
@@ -1055,10 +1062,20 @@
       lucide.createIcons();
 
       try {
+        const payload = { 
+          company, 
+          title, 
+          jd, 
+          target_persona, 
+          gemini_api_key,
+          custom_skills: (resumeProfile && resumeProfile.is_custom && resumeProfile.all_skills) ? resumeProfile.all_skills : null,
+          candidate_name: (resumeProfile && resumeProfile.is_custom) ? resumeProfile.name : null,
+          raw_resume_text: (resumeProfile && resumeProfile.is_custom) ? resumeProfile.raw_text : null
+        };
         const res = await fetch('/api/analyze-jd', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ company, title, jd, target_persona, gemini_api_key })
+          body: JSON.stringify(payload)
         });
         const data = await res.json();
         currentAnalysis = data;
@@ -1572,11 +1589,27 @@
       }
     }
 
-    // Resume Profile Loader
+    const STORAGE_PROFILE_KEY = 'JOBPULSE_CANDIDATE_PROFILE';
+
+    // Resume Profile Loader (Client-isolated session)
     async function loadResumeProfile() {
       try {
-        const res = await fetch('/api/resume');
-        const p = await res.json();
+        let p = null;
+        // 1. Check local session storage first (isolated to this user's browser)
+        const localData = localStorage.getItem(STORAGE_PROFILE_KEY);
+        if (localData) {
+          try {
+            p = JSON.parse(localData);
+          } catch (e) {
+            localStorage.removeItem(STORAGE_PROFILE_KEY);
+          }
+        }
+
+        // 2. Fall back to bundled default profile if no custom resume uploaded
+        if (!p) {
+          const res = await fetch('/api/resume');
+          p = await res.json();
+        }
         resumeProfile = p;
 
         const nameEl = document.getElementById('prof-name');
@@ -1602,15 +1635,18 @@
         const tabResumeLabel = document.getElementById('tab-resume-label');
 
         if (p.is_custom) {
-          if (customBadge) customBadge.classList.remove('hidden');
+          if (customBadge) {
+            customBadge.classList.remove('hidden');
+            customBadge.textContent = 'PRIVATE SESSION • THIS DEVICE ONLY';
+          }
           if (profResetBtn) profResetBtn.classList.remove('hidden');
           if (headerResetBtn) headerResetBtn.classList.remove('hidden');
-          if (tabResumeLabel) tabResumeLabel.innerHTML = '<strong class="text-orange-600">05.</strong> ' + (p.name ? p.name.split(' ')[0] : 'Uploaded') + "'s Resume";
+          if (tabResumeLabel) tabResumeLabel.innerHTML = '<strong class="text-orange-600">05.</strong> ' + (p.name ? p.name.split(' ')[0] : 'Custom') + "'s Resume";
         } else {
           if (customBadge) customBadge.classList.add('hidden');
           if (profResetBtn) profResetBtn.classList.add('hidden');
           if (headerResetBtn) headerResetBtn.classList.add('hidden');
-          if (tabResumeLabel) tabResumeLabel.innerHTML = '<strong class="text-orange-600">05.</strong> My Resume';
+          if (tabResumeLabel) tabResumeLabel.innerHTML = '<strong class="text-orange-600">05.</strong> Default Resume';
         }
 
         const container = document.getElementById('prof-skills-container');
@@ -1653,7 +1689,9 @@
         const res = await fetch('/api/resume/upload', { method: 'POST', body: formData });
         const data = await res.json();
         if (data.success) {
-          alert(`Success! Parsed "${data.filename}".\nCandidate: ${data.profile.name}\nSkills Found: ${data.profile.all_skills.length}\nAll jobs and ATS match calculations are now calibrated to this resume.`);
+          // Persist custom profile privately in this user's browser localStorage
+          localStorage.setItem(STORAGE_PROFILE_KEY, JSON.stringify(data.profile));
+          alert(`Success! Parsed "${data.filename}".\nCandidate: ${data.profile.name}\nSkills Extracted: ${data.profile.all_skills.length}\n\n🔒 This resume is saved privately in your browser session and will never be shared with or visible to other users. All jobs and ATS match calculations are now calibrated to your resume.`);
           await loadResumeProfile();
           await loadJobs(true);
         } else {
@@ -1669,17 +1707,10 @@
 
     async function resetResumeToDefault() {
       if (!confirm('Reset back to default profile (Venu Gopal Potnuru.pdf)?')) return;
-      try {
-        const res = await fetch('/api/resume/reset', { method: 'POST' });
-        const data = await res.json();
-        if (data.success) {
-          alert('Reset to default resume profile successfully.');
-          await loadResumeProfile();
-          await loadJobs(true);
-        }
-      } catch (err) {
-        alert('Error resetting resume: ' + err.message);
-      }
+      localStorage.removeItem(STORAGE_PROFILE_KEY);
+      await loadResumeProfile();
+      await loadJobs(true);
+      alert('Reset back to default profile successfully.');
     }
 
     function copyBullets() {

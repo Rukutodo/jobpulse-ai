@@ -91,13 +91,30 @@ def detect_target_role(job_title: str, jd_text: str) -> str:
     # Default Full Stack
     return "fullstack"
 
-def calculate_ats_match(job_title: str, job_description: str) -> Dict[str, Any]:
+def calculate_ats_match(
+    job_title: str, 
+    job_description: str,
+    candidate_skills: Optional[List[str]] = None,
+    raw_resume_text: Optional[str] = None
+) -> Dict[str, Any]:
     """
-    Calculate ATS match score between job and Venu's resume.
-    Returns match percentage, role persona, matched skills, missing skills, and recommendations.
+    Calculate ATS match score between job and active candidate resume.
+    If candidate_skills is provided, calculates match based on that candidate's skills (per-user session).
+    Otherwise defaults to bundled Venu Gopal Potnuru profile.
     """
-    profile = parse_resume()
-    resume_skills_lower = get_skill_set()
+    if candidate_skills:
+        resume_skills_lower = set()
+        for s in candidate_skills:
+            resume_skills_lower.add(s.lower())
+            for k, v in TECH_SKILLS.items():
+                if v.lower() == s.lower():
+                    resume_skills_lower.add(k)
+        raw_text_lower = (raw_resume_text or " ".join(candidate_skills)).lower()
+    else:
+        profile = parse_resume()
+        resume_skills_lower = get_skill_set()
+        raw_text_lower = profile.get("raw_text", "").lower()
+
     role_persona = detect_target_role(job_title, job_description)
     
     combined_jd_text = f"{job_title} {job_description}"
@@ -112,7 +129,7 @@ def calculate_ats_match(job_title: str, job_description: str) -> Dict[str, Any]:
     for skill in sorted(jd_skills):
         skill_lower = skill.lower()
         if (skill_lower in resume_skills_lower or 
-            any(w in profile["raw_text"].lower() for w in skill_lower.split())):
+            any(w in raw_text_lower for w in skill_lower.split())):
             matched_skills.append(skill)
         else:
             missing_skills.append(skill)
@@ -297,15 +314,16 @@ def generate_outreach_messages(
     company: str,
     job_title: str,
     matched_skills: List[str],
-    role_persona: str = "fullstack"
+    role_persona: str = "fullstack",
+    candidate_profile: Optional[Dict[str, Any]] = None
 ) -> Dict[str, str]:
     """Generate persona-specific LinkedIn connection notes, cold emails, and referral pitches with verified URLs."""
-    profile = parse_resume()
-    name = profile.get("name", "Venu Gopal Potnuru")
+    profile = candidate_profile or parse_resume()
+    name = profile.get("name") or "Candidate"
     first_name = name.split()[0] if name else "Candidate"
-    loc = profile.get("location", "Hyderabad, India")
-    phone = profile.get("phone", "+91 95025 21952")
-    email_addr = profile.get("email", "vvarun321@gmail.com")
+    loc = profile.get("location") or "Remote"
+    phone = profile.get("phone") or ""
+    email_addr = profile.get("email") or ""
     links = profile.get("links", {})
     li_url = links.get("linkedin", "https://www.linkedin.com/in/venu-gopal-potnuru-8b272b199")
     gh_url = links.get("github", "https://github.com/Rukutodo")

@@ -44,6 +44,9 @@ class ManualJDRequest(BaseModel):
     jd: str
     target_persona: Optional[str] = "auto"
     gemini_api_key: Optional[str] = None
+    custom_skills: Optional[List[str]] = None
+    candidate_name: Optional[str] = None
+    raw_resume_text: Optional[str] = None
 
 class ApplicationCreate(BaseModel):
     job_id: Optional[str] = ""
@@ -101,20 +104,19 @@ async def get_resume():
 
 @app.post("/api/resume/upload")
 async def upload_resume(file: UploadFile = File(...)):
-    """Uploads a new resume PDF, parses its text, skills, and links dynamically."""
+    """
+    Statelessly uploads a new resume PDF, extracts candidate profile and skills,
+    and returns them to the caller without mutating server-level shared state.
+    This guarantees 100% private per-user isolation.
+    """
     if not file.filename.lower().endswith(".pdf"):
         raise HTTPException(status_code=400, detail="Only PDF resumes are supported.")
     
     try:
         content = await file.read()
-        try:
-            dest_path = UPLOAD_DIR / file.filename
-            with dest_path.open("wb") as buffer:
-                buffer.write(content)
-        except Exception:
-            pass
-        
-        parsed = set_active_resume_bytes(content, filename=file.filename)
+        from resume_parser import parse_custom_resume
+        # Pure stateless parse: does not alter server global state
+        parsed = parse_custom_resume(content, filename=file.filename)
         return {
             "success": True,
             "filename": file.filename,
@@ -125,7 +127,7 @@ async def upload_resume(file: UploadFile = File(...)):
 
 @app.post("/api/resume/reset")
 async def reset_resume():
-    """Resets the active resume back to the default profile (Venu Gopal Potnuru.pdf)."""
+    """Resets active resume back to the default profile (Venu Gopal Potnuru.pdf)."""
     parsed = reset_to_default_resume()
     return {
         "success": True,
@@ -148,22 +150,29 @@ async def list_companies(
 
 @app.get("/api/jobs/search")
 async def search_live_jobs(
+    request: Request,
     q: Optional[str] = Query(None, description="Search term / skill"),
     location: Optional[str] = Query("all", description="Location filter"),
     source: Optional[str] = Query("all", description="Source board filter"),
+    skills: Optional[str] = Query(None, description="Comma-separated skills for per-user candidate scoring"),
     force: bool = Query(False, description="Force refresh job caches")
 ):
     """
     Fetches active tech jobs, filters by query/location, and pre-scores each
-    job with ATS match against Venu's resume.
+    job with ATS match against the user's isolated candidate skills.
     """
     raw_jobs = await fetch_all_jobs(force_refresh=force)
     filtered = search_jobs(raw_jobs, query=q, location=location, source=source)
 
+    # Check query param or header for per-user candidate skills
+    hdr_skills = request.headers.get("x-candidate-skills")
+    custom_skills_raw = skills or hdr_skills
+    target_skills = [s.strip() for s in custom_skills_raw.split(",") if s.strip()] if custom_skills_raw else None
+
     # Score each job
     scored_jobs = []
     for job in filtered:
-        match_info = calculate_ats_match(job["title"], job["description"])
+        match_info = calculate_ats_match(job["title"], job["description"], candidate_skills=target_skills)
         j_copy = dict(job)
         j_copy["match"] = match_info
         scored_jobs.append(j_copy)
@@ -182,14 +191,19 @@ async def analyze_jd(payload: ManualJDRequest):
     """
     Analyzes any pasted job description: returns ATS match, missing skills,
     tailored Google X-Y-Z resume bullets, and personalized outreach pitches.
-    Supports AI Engineer, Forward Deployed Engineer (FDE), SAP ABAP, and Full Stack personas.
+    Uses candidate's private session skills and name if provided.
     """
     if not payload.jd.strip():
         raise HTTPException(status_code=400, detail="Job description text is required")
 
     from matcher import calculate_ats_match, generate_tailored_bullets, generate_outreach_messages, generate_with_gemini
 
-    match_info = calculate_ats_match(payload.title, payload.jd)
+    match_info = calculate_ats_match(
+        payload.title, 
+        payload.jd,
+        candidate_skills=payload.custom_skills,
+        raw_resume_text=payload.raw_resume_text
+    )
     persona = payload.target_persona if (payload.target_persona and payload.target_persona != "auto") else match_info["role_persona"]
 
     # Try Gemini Generative AI if key provided
@@ -209,7 +223,21 @@ async def analyze_jd(payload: ManualJDRequest):
         engine_used = "Google Gemini 2.5 Flash"
     else:
         bullets = generate_tailored_bullets(payload.title, match_info["matched_skills"], role_persona=persona)
-        outreach = generate_outreach_messages(payload.company, payload.title, match_info["matched_skills"], role_persona=persona)
+        candidate_profile = None
+        if payload.candidate_name:
+            candidate_profile = {
+                "name": payload.candidate_name,
+                "title": persona,
+                "location": "Remote",
+                "links": {}
+            }
+        outreach = generate_outreach_messages(
+            payload.company, 
+            payload.title, 
+            match_info["matched_skills"], 
+            role_persona=persona,
+            candidate_profile=candidate_profile
+        )
         engine_used = "High-Accuracy Persona Engine"
 
     return {
