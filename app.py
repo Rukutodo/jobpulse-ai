@@ -70,7 +70,6 @@ def startup_event():
     # Warm up resume parser
     parse_resume()
 
-@app.get("/api/index.py", response_class=HTMLResponse)
 @app.get("/", response_class=HTMLResponse)
 async def serve_index():
     index_file = TEMPLATE_DIR / "index.html"
