@@ -359,12 +359,14 @@
 
         <!-- Category Segmented Buttons: Scrollable on small screens -->
         <div class="flex items-center gap-1 pt-3 border-t border-zinc-100 overflow-x-auto no-scrollbar">
-          <button onclick="filterCompaniesCategory('all', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase bg-orange-600 text-white font-extrabold border border-orange-600 whitespace-nowrap flex-shrink-0 shadow-sm">All Firms (27)</button>
-          <button onclick="filterCompaniesCategory('hft', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">HFT / Quant</button>
-          <button onclick="filterCompaniesCategory('mnc', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">Global MNCs</button>
-          <button onclick="filterCompaniesCategory('unicorn', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">Unicorns</button>
-          <button onclick="filterCompaniesCategory('enterprise_sap', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">Enterprise & SAP</button>
-          <button onclick="filterCompaniesCategory('ai', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">AI Labs</button>
+          <button onclick="filterCompaniesCategory('all', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase bg-orange-600 text-white font-extrabold border border-orange-600 whitespace-nowrap flex-shrink-0 shadow-sm">All Firms (86)</button>
+          <button onclick="filterCompaniesCategory('service', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">Top IT Services (22)</button>
+          <button onclick="filterCompaniesCategory('mnc', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">Product MNCs (17)</button>
+          <button onclick="filterCompaniesCategory('fintech_gcc', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">GCCs & Banks (11)</button>
+          <button onclick="filterCompaniesCategory('unicorn', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">Unicorns (12)</button>
+          <button onclick="filterCompaniesCategory('hft', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">HFT / Quant (9)</button>
+          <button onclick="filterCompaniesCategory('enterprise_sap', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">Enterprise & SAP (7)</button>
+          <button onclick="filterCompaniesCategory('ai', this)" class="company-cat-btn px-2.5 sm:px-3 py-1 text-xs font-mono uppercase text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100 border border-transparent whitespace-nowrap flex-shrink-0">AI Labs (8)</button>
         </div>
       </div>
 
@@ -1229,13 +1231,14 @@
               <div class="flex items-start justify-between gap-2.5">
                 <div>
                   <h3 class="text-xs sm:text-sm font-extrabold text-zinc-900 group-hover:text-orange-600 transition font-mono">${escapeHtml(c.name)}</h3>
-                  <div class="flex items-center gap-1.5 mt-1.5">
-                    <span class="text-[9px] px-1.5 py-0.2 font-mono uppercase bg-zinc-100 text-zinc-700 border border-zinc-200">
+                  <div class="flex flex-wrap items-center gap-1.5 mt-1.5">
+                    <span class="text-[9px] px-1.5 py-0.5 font-mono uppercase bg-zinc-100 text-zinc-700 border border-zinc-200">
                       ${escapeHtml(c.category_label)}
                     </span>
-                    <span class="text-[9px] px-1.5 py-0.2 font-mono uppercase border ${atsBadge}">
+                    <span class="text-[9px] px-1.5 py-0.5 font-mono uppercase border ${atsBadge}">
                       ${escapeHtml(c.ats)}
                     </span>
+                    ${c.pay_range ? `<span class="text-[9px] px-1.5 py-0.5 font-mono font-bold bg-orange-50 text-orange-700 border border-orange-200">${escapeHtml(c.pay_range)}</span>` : ''}
                   </div>
                 </div>
               </div>
